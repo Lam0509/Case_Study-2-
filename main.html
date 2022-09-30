@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <img src="https://daihocchinhquy.neu.edu.vn/Content/logo/banner-yersin.jpg" alt="">
+  </div>
+
+  <div id="mainText">
+    <h1>Quản lý học viên</h1>
+  </div>
+
+  <div id="main">
+      <div id="tableInf">
+          <form action="">
+              <table>
+                  <tr>
+                      <th colspan="2">Thông tin học viên</th>
+                  </tr>
+                  <tr>
+                      <td><span>ID</span></td>
+                      <td><input type="text" name="Id" id="Id" oninput="hideP(0)" required><p id="Id1"></p></td>
+                  </tr>
+                  <tr>
+                      <td><span>Họ tên</span></td>
+                      <td><input type="text" name="name" id="Name" oninput="hideP(1)"><p id="Name1"></p></td>
+                  </tr>
+                  <tr>
+                      <td><span>Ngày sinh</span></td>
+                      <td><input type="text" name="date" id="Date" oninput="hideP(2)"><p id="Date1"></p></td>
+                  </tr>
+                  <tr>
+                      <td><span>Giới tính</span></td>
+                      <td><input type="text" name="gender" id="Gender" oninput="hideP(3)"><p id="Gender1"></p></td>
+                  </tr>
+                  <tr>
+                      <td><span>Lớp</span></td>
+                      <td><input type="text" name="classroom" id="Classroom" oninput="hideP(4)"><p id="Classroom1"></p></td>
+                  </tr>
+                  <tr>
+                      <td><span>Ảnh</span></td>
+                      <td><input type="text" name="image" id="Image" oninput="hideP(5)"><p id="Image1"></p></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td>
+                          <button type="button" onclick="validateForm('add')">Add</button>
+                          <button type="button" onclick="validateForm('save')">Save</button>
+                      </td>
+                  </tr>
+              </table>
+          </form>
+      </div>
+
+      <div id="showList">
+
+      </div>
+  </div>
+
+</div>
+<script src="Students.js"></script>
+<script src="StudentsManage.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
